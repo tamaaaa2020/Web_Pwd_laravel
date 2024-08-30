@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #F6F6F6;
+}
+
+body {
+  background-color: #f3f5f9;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+  z-index: 12;
+}
+
+.wrapper .sidebar {
+  width: 200px;
+  height: 100%;
+  background: #F9F9F9;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+h2 {
+  margin-right: 95px;
+  margin-top: 10px;
+  font-size: medium;
+}
+
+.wrapper .sidebar h2 {
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.wrapper .sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.wrapper .sidebar ul li a {
+  color: #000000;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas {
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover {
+  background-color: #fff;
+}
+
+.wrapper .sidebar ul li:hover a {
+  color: #000000;
+}
+
+.wrapper .sidebar .social_media {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a {
+  display: block;
+  width: 40px;
+  background: #594f8d;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content {
+  width: calc(100% - 200px);
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header {
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+  position: relative;
+}
+
+.header {
+  display: block;
+  height: auto;
+  padding: 140px 30px 45px;
+  position: relative;     
+}
+
+.header p {
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .6;
+}
+
+.Play-list {
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Play-list h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.Play-list .child {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.Play-list .child:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.Play-list .child p {
+  margin: 0;
+  color: #333;
+}
+
+.Play-list .child:hover p {
+  color: #000;
+}
+
+
+.main-hero1 {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 20px;
+  background: #fff0;
+  white-space: nowrap; /* Prevent items from wrapping */
+  width: 100%; /* Full width of the parent container */
+  box-sizing: border-box; /* Include padding in the element's width */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.main-hero1::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Elemen border */
+.border {
+  flex: 0 0 auto; /* Prevent the items from shrinking or growing */
+  width: 150px; /* Width of each item */
+  height: 150px; /* Height of each item */
+  margin: 10px;
+  background: #ddd;
+  text-align: center;
+  line-height: 150px; /* Center text vertically */
+  border-radius: 5px;
+}
+
+.main-hero2 {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 20px;
+  background: #fff0;
+  white-space: nowrap; /* Prevent items from wrapping */
+  width: 100%; /* Full width of the parent container */
+  box-sizing: border-box; /* Include padding in the element's width */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.main-hero3 {
+  display: flex;
+  overflow: hidden; /* Enable horizontal scrolling */
+  padding: 20px;
+  background: #fff0;
+  white-space: nowrap; /* Prevent items from wrapping */
+  width: 100%; /* Full width of the parent container */
+  box-sizing: border-box; /* Include padding in the element's width */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.desc{
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+
+
+/* Container Billboard */
+.bilboard {
+  padding: 20px;
+  width: 33%;
+}
+
+/* Deskripsi Billboard */
+.desc-bl {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+/* Container Scroll */
+.scroll {
+  max-height: 150px; /* Adjust this value as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Container untuk Border dan Deskripsi */
+.border-container {
+  display: flex; /* Use Flexbox */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 10px;
+}
+
+/* Elemen Border */
+.border-bl {
+  background: #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  width: 40px; /* Adjust width as needed */
+  text-align: center;
+  margin-right: 20px; /* Add space between border and description */
+}
+  
+.scroll::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.scroll {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.disc-genre{
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 20px;
+  padding-left: 0px;
+   background: #fff0;
+   white-space: nowrap; /* Prevent items from wrapping */
+   box-sizing: border-box; /* Include padding in the element's width */
+   width: 21%;
+   scrollbar-width: none; /* For Firefox */
+   -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+   position: relative;
+   margin-top: 45px;
+   left: -30px;
+ }
+ 
+ .disc-month{
+   display: flex;
+   overflow-x: auto; /* Enable horizontal scrolling */
+   padding: 20px;
+    background: #fff0;
+    white-space: nowrap; /* Prevent items from wrapping */
+    width: 23%;
+    box-sizing: border-box; /* Include padding in the element's width */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    position: relative;;
+    margin-top: 45px;
+  }
+
+
+.scroll-dg {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.border-dg {
+  border: 1px solid #ccc;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.title{
+  display: flex;
+  gap: 10rem;
+}
+
+.title-best{
+  padding: 25px
+}
+
