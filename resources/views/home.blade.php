@@ -36,6 +36,12 @@
            <div class="child">
             <p>Playlist 4</p>
            </div>
+           <div class="child">
+            <p>Playlist 5</p>
+           </div>
+           <div class="child">
+            <p>Playlist 6</p>
+           </div>
         </div>
     </div>
 
