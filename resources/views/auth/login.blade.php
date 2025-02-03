@@ -15,7 +15,8 @@
             <p>Login Your Account</p>
             <br>
             <br>
-            <form action="" method="post">
+            <form action="{{route('login.post')}}" method="post">  
+                @csrf
                 <div class="field input">
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email" autocomplete="off" required>
@@ -29,8 +30,8 @@
                 </div>
 
                 <div class="buttons">
-                    <button class="btn" onclick="location.href='login.php'">Login</button>
-                    <button class="btn" onclick="location.href='login.php'">Sign UP</button>
+                    <button class="btn" type="submit">Login</button>
+                    <a class="btn" href="{{route('register')}}">Sign UP</a>
                 </div>
             </form>
         </div>

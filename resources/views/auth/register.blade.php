@@ -16,23 +16,28 @@
           <P>Register Your Account</P>
           <br>
           <br>
-            <form action="" method="post">
+            <form action="{{route('register.post')}}" method="post">
+                @csrf
                 <div class="field input">
                     <label for="username">Name</label>
-                    <input type="text" name="username" id="username" autocomplete="off" required>
+                    <input type="text" name="name" id="name" autocomplete="off" required>
+                </div>
+                <div class="field input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" autocomplete="off" required>
                 </div>
                 <div class="field input">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" autocomplete="off" required>
                 </div>
                 <div class="field input">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" autocomplete="off" required>
+                    <label for="password">Confirm Password</label>
+                    <input type="password" name="password_confirmation" id="password" autocomplete="off" required>
                 </div>
 
                 <div class="buttons">
-                    <button class="btn" onclick="location.href='login.php'">Login</button>
-                    <button class="btn" onclick="location.href='login.php'">Sign IN</button
+                <button class="btn" type="submit">Login</button>
+                <a class="btn" href="{{route('login')}}">Sign In</a>
                 </div>
                
             </form>
